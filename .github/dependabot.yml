@@ -1,0 +1,20 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "npm" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+      time: "11:49"
+      timezone: "America/Bogota"
+    #target-branch: "main"  #define la branch (rama) objetivo
+    open-pull-requests-limit: 3  #permite definir cuantos pull request pude abrir (por defecto son 5)    
+    
+    target-branch: "develop"  #define la branch (rama) objetivo
+    
+    reviewers:
+      - "octocat"
